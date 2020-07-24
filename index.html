@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+    function loadFunction() {
+      if (document.referrer.indexOf('https://heenarehan.github.io/Sample-Webpage/') !== -1) {
+        usercentrics.updateCenteredModalIsVisible(true);
+      }
+    }
+    if (window["usercentrics"].isInitialized) {
+      loadFunction();
+    } else {
+      window["usercentrics"].onViewInit = function () {
+        loadFunction();
+      }
+    }
+</script>
+</head>
 <body>
     <h1>
                     Just an Sample Webpage
@@ -11,5 +26,4 @@
     
 
 </body>
-</head>
 </html>
