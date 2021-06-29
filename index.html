@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>
-    function loadFunction() {
-      if (document.referrer.indexOf('https://heenarehan.github.io/Webpage-Link/') !== -1) {
-        usercentrics.updateCenteredModalIsVisible(true);
-      }
-    }
-    if (window["usercentrics"].isInitialized) {
-      loadFunction();
-    } else {
-      window["usercentrics"].onViewInit = function () {
-        loadFunction();
-      }
-    }
-</script>
+
+<script id=“usercentrics-cmp” data-settings-id=“MrgVp_SH” src=“https://app.usercentrics.eu/browser-ui/latest/bundle.js” async></script>
+
 </head>
 <body>
     <h1>
                     Just an Sample Webpage
     </h1>
                 <p>
-                    This page serves as a Webpage for test of the UserCentrics CMP with Centre Modal.
+                    This page serves as a Webpage for test of the UserCentrics CMP.
                 </p>
     
 
